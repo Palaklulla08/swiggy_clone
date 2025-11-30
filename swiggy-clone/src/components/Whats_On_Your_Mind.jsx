@@ -3,20 +3,20 @@ import { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-function WhatsonyourMind() {
-  const [data, setdata] = useState([]);
+function WhatsonyourMind({data}) {
+//   const [data, setdata] = useState([]);
   const [value, setvalue] = useState(0);
-  async function fetchData() {
-    const data1 = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.71700&lng=75.83370&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
-    const result = await data1.json();
-    console.log(result?.data?.cards[0]?.card?.card?.imageGridCards?.info);
-    setdata(result?.data?.cards[0]?.card?.card?.imageGridCards?.info);
-  }
-  useEffect(() => {
-    fetchData();
-  }, []);
+//   async function fetchData() {
+//     const data1 = await fetch(
+//       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.71700&lng=75.83370&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+//     );
+//     const result = await data1.json();
+//     console.log(result?.data?.cards[0]?.card?.card?.imageGridCards?.info);
+//     setdata(result?.data?.cards[0]?.card?.card?.imageGridCards?.info);
+//   }
+//   useEffect(() => {
+//     fetchData();
+//   }, []);
   function handleNext() {
     value >= 124 ? "" : setvalue((prev) => prev + 31);
   }
