@@ -2,7 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import { MdStarRate } from "react-icons/md";
+// import { MdStarRate } from "react-icons/md";
+import RestaurantCard from "./RestaurantCard";
 
 function TopRestaurents({ data }) {
   //   const [data, setdata] = useState([]);
@@ -60,14 +61,11 @@ function TopRestaurents({ data }) {
             </div>
           </div>
         </div>
-        <div
-          style={{ translate: `-${value}%` }}
-          className={`flex mt-4 duration-300 gap-5 w-full`}
-        >
+        <div style={{ translate: `-${value}%` }} className={`flex mt-4 duration-300 gap-5 w-full`}>
           {data.map((item) => {
             return (<>
               <div className="hover:scale-95 duration-300">
-                <div className="min-w-[295px] h-[182px] relative">
+                {/* <div className="min-w-[295px] h-[182px] relative">
                   <img
                     src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${item?.info?.cloudinaryImageId}`}
                     alt="img"
@@ -85,7 +83,8 @@ function TopRestaurents({ data }) {
                  <p className="flex items-center gap-1 text-base font-semibold"><MdStarRate color="green" size={20}/>{item?.info?.avgRating} .<span>{item?.info?.sla?.slaString}</span></p>
                  <p className="line-clamp-1 text-black/60 font-medium">{item?.info?.cuisines.join(", ")}</p>
                 <p className="line-clamp-1 text-black/60 font-medium">{item?.info?.locality}</p>  
-              </div>
+              </div> */}
+              <RestaurantCard {...item}/>
               </div>
               </>
             );
