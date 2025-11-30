@@ -1,6 +1,6 @@
 import React  from "react";
-
 import WhatsonyourMind from "./Whats_On_Your_Mind"
+import TopRestaurents from "./TopRestaurents";
 function Body() {
 
   
@@ -9,6 +9,7 @@ function Body() {
       <div className="w-full ">
         <div className="w-[75%] mx-auto  mt-3 overflow-hidden">
           < WhatsonyourMind/>
+          <TopRestaurents/>
         </div>
       </div>
     </>
