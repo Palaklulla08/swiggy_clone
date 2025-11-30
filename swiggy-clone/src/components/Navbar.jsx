@@ -7,7 +7,7 @@ import { BiSolidOffer } from "react-icons/bi";
 import { IoMdHelpCircle } from "react-icons/io";
 import { PiSignInBold } from "react-icons/pi";
 import { FaShoppingCart } from "react-icons/fa";
-function Navbar() {
+function Navbar() { 
     return ( 
         <>
         <div className="w-full shadow-md h-20 flex justify-center items-center  ">
@@ -18,12 +18,12 @@ function Navbar() {
                 <RxCaretDown className='text-xl text-[rgb(255,82,0)]'/>
             </div>
              <div className='flex items-center gap-9'>
-                <div className='flex items-center gap-1'><HiBuildingOffice2/><p>Swiggy Coperate</p></div>
-                <div className='flex items-center gap-1'><IoSearchSharp/><p>Search</p></div>
-                <div className='flex items-center gap-1'><BiSolidOffer/><p>Offers</p></div>
-                <div className='flex items-center gap-1'><IoMdHelpCircle/><p>Help</p></div>
-                <div className='flex items-center gap-1'><PiSignInBold/><p>Signin</p></div>
-                <div className='flex items-center gap-1'><FaShoppingCart/><p>Cart</p></div>
+                <div className='flex items-center gap-2'><HiBuildingOffice2/><p>Swiggy Corporate</p></div>
+                <div className='flex items-center gap-2'><IoSearchSharp/><p>Search</p></div>
+                <div className='flex items-center gap-2'><p>Offers<sup>NEW</sup></p></div>
+                <div className='flex items-center gap-2'><IoMdHelpCircle/><p>Help</p></div>
+                <div className='flex items-center gap-2'><p>Signin</p></div>
+                <div className='flex items-center gap-2'><FaShoppingCart/><p>Cart</p></div>
             </div> 
          </div>
         </div>
