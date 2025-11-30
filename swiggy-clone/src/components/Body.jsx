@@ -35,7 +35,7 @@ function Body() {
             </div>
           </div>
 
-          <div style={{translate :`-${value}%`}}className={`flex mt-3 duration-1000`}>
+          <div style={{translate :`-${value}%`}}className={`flex mt-3 duration-300`}>
             {data.map((item) => {
               return (
                 <img
